@@ -26,6 +26,9 @@
 // #![warn(clippy::cargo, clippy::restriction, missing_docs, warnings)]
 // #![allow(clippy::implicit_return)]
 
-mod consts;
-mod error;
 pub use error::{Error, Result};
+
+mod consts;
+mod container;
+mod dependency_kind;
+mod error;
